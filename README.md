@@ -51,7 +51,7 @@ const typeDefs = `
       }
 
       type Mutation {
-        sendMessage(author: String!, text: String!): Chat
+        sendMessage(author: String!, text: String!): Message
       }
 
       type Subscription {
@@ -98,7 +98,7 @@ With the schemas defined, let’s move on to defining the resolver functions. In
 ```
 
 Use node or nodemon to start the server
-`node src/index.js`
+`$ node src/index.js`
 
 ### Creating web client (React app)
 
@@ -106,10 +106,13 @@ Create web-client folder
 `$ mkdir web-client`
 
 Create react app
-`npx create-react-app .`
+`$ npx create-react-app .`
+
+Cd to web-client folder:
+`$ cd web-client`
 
 Install dependencies:
-`npm install graphql graphql-tag apollo-client apollo-link apollo-link-http apollo-link-ws apollo-utilities apollo-cache-inmemory react-apollo subscriptions-transport-ws`
+`$ npm install graphql graphql-tag apollo-client apollo-link apollo-link-http apollo-link-ws apollo-utilities apollo-cache-inmemory react-apollo subscriptions-transport-ws`
 
 App.js code
 
