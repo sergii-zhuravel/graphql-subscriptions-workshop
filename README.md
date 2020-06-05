@@ -1,6 +1,8 @@
-## This project consists from server (node + graphql-yoga) and web-client(React + apollo-client)
+# Graphql subscriptions practice (Chat app)
 
-Create a project folder, in this folder we will create server and web-client subfolders.
+## This project consists of two main components server (node + graphql-yoga) and web-client(React + apollo-client)
+
+Create a project folder (for example `chat_app`), in this folder we will create server and web-client subfolders.
 
 ### Creating GraphQL Server
 
